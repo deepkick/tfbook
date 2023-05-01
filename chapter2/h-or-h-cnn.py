@@ -14,21 +14,25 @@ import zipfile
 
 training_url = "https://storage.googleapis.com/learning-datasets/horse-or-human.zip"
 training_file_name = "horse-or-human.zip"
-training_dir = 'horse-or-human/training/'
-urllib.request.urlretrieve(training_url, training_file_name)
+training_dir = 'chapter2/horse-or-human/training/'
+#training_dir = '/Users/kaoru/Documents/Python_AI_and_ML_for_Corders/tfbook/chapter2/horse-or-human/training/'
 
-zip_ref = zipfile.ZipFile(training_file_name, 'r')
-zip_ref.extractall(training_dir)
-zip_ref.close()
+#urllib.request.urlretrieve(training_url, training_file_name)
+
+#zip_ref = zipfile.ZipFile(training_file_name, 'r')
+#zip_ref.extractall(training_dir)
+#zip_ref.close()
 
 validation_url = "https://storage.googleapis.com/learning-datasets/validation-horse-or-human.zip"
 validation_file_name = "validation-horse-or-human.zip"
-validation_dir = 'horse-or-human/validation/'
-urllib.request.urlretrieve(validation_url, validation_file_name)
+validation_dir = 'chapter2/horse-or-human/validation/'
+#validation_dir = '/Users/kaoru/Documents/Python_AI_and_ML_for_Corders/tfbook/chapter2/horse-or-human/validation/'
 
-zip_ref = zipfile.ZipFile(validation_file_name, 'r')
-zip_ref.extractall(validation_dir)
-zip_ref.close()
+#urllib.request.urlretrieve(validation_url, validation_file_name)
+
+#zip_ref = zipfile.ZipFile(validation_file_name, 'r')
+#zip_ref.extractall(validation_dir)
+#zip_ref.close()
 
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
