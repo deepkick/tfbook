@@ -20,6 +20,12 @@ class myCallback(tf.keras.callbacks.Callback):
 callbacks = myCallback()
 mnist = tf.keras.datasets.fashion_mnist
 (training_images, training_labels), (test_images, test_labels) = mnist.load_data()
+
+print('training_images.shape: ', training_images.shape)
+print('training_images.shape: ', training_images.shape)
+print('training_images.shape: ', training_images.shape)
+print('training_images.shape: ', training_images.shape)
+
 training_images=training_images/255.0
 test_images=test_images/255.0
 model = tf.keras.models.Sequential([
