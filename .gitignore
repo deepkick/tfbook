@@ -128,3 +128,4 @@ dmypy.json
 *.png
 *.jpg
 *.zip
+.DS_Store
